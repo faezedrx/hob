@@ -25,7 +25,3 @@ Welcome to the whimsical world of leisure activities! This project features a de
 
 To experience the magic firsthand, visit the live version of this project:
 https://faezedrx.github.io/hob/
-
----
-
-With this README, you can create a more engaging and whimsical introduction to your project, complete with emojis to add a touch of fun and fantasy!
