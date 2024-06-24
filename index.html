@@ -9,29 +9,31 @@
 <body>
     <div class="container">
         <h1>Vote for Your Favorite Leisure Activities</h1>
-        <form action="results.php" method="post">
+        <form id="surveyForm">
             <div class="option">
-                <input type="checkbox" name="activities[]" value="Reading" id="reading">
+                <input type="checkbox" name="activities" value="Reading" id="reading">
                 <label for="reading">Reading</label>
                 <span class="votes" id="votes-reading">0 votes</span>
             </div>
             <div class="option">
-                <input type="checkbox" name="activities[]" value="Traveling" id="traveling">
+                <input type="checkbox" name="activities" value="Traveling" id="traveling">
                 <label for="traveling">Traveling</label>
                 <span class="votes" id="votes-traveling">0 votes</span>
             </div>
             <div class="option">
-                <input type="checkbox" name="activities[]" value="Cooking" id="cooking">
+                <input type="checkbox" name="activities" value="Cooking" id="cooking">
                 <label for="cooking">Cooking</label>
                 <span class="votes" id="votes-cooking">0 votes</span>
             </div>
             <div class="option">
-                <input type="checkbox" name="activities[]" value="Gaming" id="gaming">
+                <input type="checkbox" name="activities" value="Gaming" id="gaming">
                 <label for="gaming">Gaming</label>
                 <span class="votes" id="votes-gaming">0 votes</span>
             </div>
             <button type="submit">Submit</button>
         </form>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
