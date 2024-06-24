@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leisure Activities Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Favorite Leisure Activities</h1>
+        <form action="results.php" method="post">
+            <div class="option">
+                <input type="checkbox" name="activities[]" value="Reading" id="reading">
+                <label for="reading">Reading</label>
+                <span class="votes" id="votes-reading">0 votes</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="activities[]" value="Traveling" id="traveling">
+                <label for="traveling">Traveling</label>
+                <span class="votes" id="votes-traveling">0 votes</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="activities[]" value="Cooking" id="cooking">
+                <label for="cooking">Cooking</label>
+                <span class="votes" id="votes-cooking">0 votes</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" name="activities[]" value="Gaming" id="gaming">
+                <label for="gaming">Gaming</label>
+                <span class="votes" id="votes-gaming">0 votes</span>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
