@@ -1,6 +1,7 @@
 <?php
 // Load votes
-$votes = json_decode(file_get_contents('votes.txt'), true);
+$votesFile = 'votes.txt';
+$votes = json_decode(file_get_contents($votesFile), true);
 if (!$votes) {
     $votes = [
         'Reading' => 0,
@@ -11,18 +12,17 @@ if (!$votes) {
 }
 
 // Update votes
-if (isset($_POST['activities'])) {
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['activities'])) {
     foreach ($_POST['activities'] as $activity) {
         if (array_key_exists($activity, $votes)) {
             $votes[$activity]++;
         }
     }
+    // Save votes
+    file_put_contents($votesFile, json_encode($votes));
 }
 
-// Save votes
-file_put_contents('votes.txt', json_encode($votes));
-
-// Redirect to index
+// Redirect back to the survey form
 header("Location: index.html");
 exit();
 ?>
