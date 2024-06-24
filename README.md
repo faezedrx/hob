@@ -11,7 +11,7 @@ Welcome to the whimsical world of leisure activities! This project features a de
 ### 🚀 Usage
 
 1. **Installation and Setup**
-   - Clone the repository: `git clone https://github.com/username/repository.git`
+   - Clone the repository: `git clone https://github.com/faezedrx/hob.git`
    - Open `index.html` in your browser to view the survey form.
 
 2. **Using the Survey Form**
