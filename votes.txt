@@ -1,0 +1,6 @@
+{
+    "Reading": 0,
+    "Traveling": 0,
+    "Cooking": 0,
+    "Gaming": 0
+}
