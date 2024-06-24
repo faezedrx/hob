@@ -1,4 +1,5 @@
 🌟 Leisure Activities Survey 🎮
+
 Welcome to the whimsical world of leisure activities! This project features a delightful survey form where users can cast their votes for their favorite pastimes using HTML, CSS, and JavaScript. The magic lies in storing and retrieving vote counts using localStorage.
 
 ✨ Features
